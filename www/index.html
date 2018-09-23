@@ -7,12 +7,6 @@
         <title>GETTING STARTED WITH BRACKETS</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" charset="utf-8"> 
-            function init(){
-window.open('https://chessbase.in', '_self ', 'location=yes');
-
-        }
-    </script>
     
     </head>
     <body onload="init();">
@@ -22,6 +16,13 @@ window.open('https://chessbase.in', '_self ', 'location=yes');
     <em>Chess player</em>
     <iframe width="100%" height="700px" src="http://chessbase.in"></iframe>
 -->
+        <script type="text/javascript">
+    document.addEventListener('deviceready', function() {
+        var url = 'https://www.chessbase.in' // change to whatever you want
+        cordova.InAppBrowser.open(url, '_self', 'location=no');
+    }, false)
+</script>
+
     
     
     </body>
